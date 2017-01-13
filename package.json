@@ -1,6 +1,6 @@
 {
   "name": "accounts-oauth-client-side",
-  "version": "1.0.10",
+  "version": "1.1.15",
   "description": "Use Meteor's accounts-oauth package with meteor-client-side",
   "main": "dist/accounts-oauth-client-side.bundle.js",
   "scripts": {
