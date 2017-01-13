@@ -1,19 +1,19 @@
 {
-  "name": "accounts-facebook-client-side",
+  "name": "accounts-oauth-client-side",
   "version": "1.0.10",
-  "description": "Use Meteor's accounts-facebook package with meteor-client-side",
-  "main": "dist/accounts-facebook-client-side.bundle.js",
+  "description": "Use Meteor's accounts-oauth package with meteor-client-side",
+  "main": "dist/accounts-oauth-client-side.bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leonardobazico/accounts-facebook-client-side.git"
+    "url": "git+https://github.com/leonardobazico/accounts-oauth-client-side.git"
   },
   "keywords": [
     "meteor",
     "accounts",
-    "facebook",
+    "oauth",
     "ddp",
     "client",
     "side"
@@ -21,8 +21,8 @@
   "author": "Leonardo Bazico",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leonardobazico/accounts-facebook-client-side/issues"
+    "url": "https://github.com/leonardobazico/accounts-oauth-client-side/issues"
   },
-  "homepage": "https://github.com/leonardobazico/accounts-facebook-client-side#readme",
-  "typings": "./dist/accounts-facebook-client-side.bundle.d.ts"
+  "homepage": "https://github.com/leonardobazico/accounts-oauth-client-side#readme",
+  "typings": "./dist/accounts-oauth-client-side.bundle.d.ts"
 }

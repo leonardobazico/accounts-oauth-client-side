@@ -1,8 +1,8 @@
 # Run this script from home folder
 
 # configs variables
-NAME=accounts-facebook-client-side # Set the bundle file name
-PACKAGE=accounts-facebook
+NAME=accounts-oauth-client-side # Set the bundle file name
+PACKAGE=accounts-oauth
 DIST_FOLDER=dist # The folder that the bundled files will be copy in to
 
 # run time variables
@@ -23,7 +23,7 @@ cd $BUNDLER_PATH
 
 
 # Add packages
-echo > .meteor/packages # Delete all default packages
+# echo > .meteor/packages # Delete all default packages
 PACKAGE_DIRS=$PARENT meteor add $PACKAGE
 
 
@@ -39,8 +39,11 @@ rm -rf $OUTPUT_PATH
 mkdir $OUTPUT_PATH
 
 # Concat files
-cat "$PACKAGES_PATH/facebook.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/accounts-facebook.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/random.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/reload.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/url.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/oauth.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/accounts-oauth.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/global-imports.js" >> $OUTPUT_PATH/$NAME.bundle.js
 
 # Minify
@@ -51,4 +54,4 @@ npm install uglify-js
 cp $OUTPUT_PATH/$NAME.bundle.* $DIST_PATH
 
 # Cleanup
-rm -rf $BUNDLER_PATH $OUTPUT_PATH
+# rm -rf $BUNDLER_PATH $OUTPUT_PATH
